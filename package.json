@@ -1,0 +1,28 @@
+{
+  "name": "ais-cloud-messaging",
+  "version": "1.0.0",
+  "description": "Micro server to send messages from AIS dom gate to mobile clients via cloud",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rysiekstation/AIS-Cloud-Messaging.git"
+  },
+  "keywords": [
+    "GFC",
+    "Node.js",
+    "AI-Speaker"
+  ],
+  "author": "rysiekstation@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rysiekstation/AIS-Cloud-Messaging/issues"
+  },
+  "homepage": "https://github.com/rysiekstation/AIS-Cloud-Messaging#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "firebase-admin": "^8.11.0"
+  }
+}

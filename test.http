@@ -1,0 +1,12 @@
+
+# This token comes from the client FCM SDKs.
+POST http://localhost:8333 HTTP/1.1
+content-type: application/json
+
+{
+    "notification": {
+        "body": "Hello",
+        "title": "AIS info"
+    },
+    "token": "f0xs8-ajVkE:APA91bEYa1ktUU5UBlofMwY8L4wyNtt_uw3o-5OM6OyYQOgyrbUEgk4fwY3UQkLCTzsXK_eoQSqI27NyutTmLizgPd3tdaKvsPVxjWmUwH8jnPAE_VrmvGmsQOdgsGAERNjdrVIVX6QM"
+}   
