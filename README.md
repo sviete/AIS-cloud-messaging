@@ -15,7 +15,8 @@ node app.js
 ```
 
 ## PM2 
+AIS-cloud-messaging -> acm
 
 ```
-pm2 start app.js
+pm2 start app.js --name "acm"
 ```
