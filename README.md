@@ -5,18 +5,28 @@ Micro server to send messages from AIS dom gate to mobile clients via cloud
 ## Install 
 
 ```
-npm install ais-cloud-messaging
+git clone https://github.com/sviete/AIS-cloud-messaging.git
+cd AIS-cloud-messaging
+npm install
 ```
 
-## Run
+## Add key from FCM
 
 ```
-node app.js
+aispushnotification-server-key.json
 ```
 
 ## PM2 
-AIS-cloud-messaging -> acm
+AIS-cloud-messaging -> ACM
 
 ```
-pm2 start app.js --name "acm"
+pm2 start app.js --name "ACM"
+```
+
+## PM2 logs
+
+```
+pm2 logs ACM
+/home/dom/.pm2/logs/acm-out.log last 15 lines:
+11|ACM     | server started...
 ```
