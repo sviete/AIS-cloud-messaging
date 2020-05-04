@@ -11,22 +11,24 @@ admin.initializeApp({
 });
 
 
-app.post('/', function (req, res) {
+app.post('/acm', function (req, res) {
 
     var message = req.body;
     admin.messaging().send(message)
     .then((response) => {
         console.log('Successfully sent message:', response);
+        res.send(response);
     })
     .catch((error) => {
         console.log('Error sending message:', error);
+        res.send(error);
     });
 
-    res.send('ok');
+
   })
 
 app.get('/', (req, res, next) => {
-    res.send('Post message to send it to mobile');
+    res.send('Post message on /acm to send it to mobile');
 });
 
 
